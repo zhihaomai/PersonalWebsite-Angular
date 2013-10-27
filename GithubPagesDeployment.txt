@@ -1,0 +1,4 @@
+1. Grunt Build (make sure .tmp is empty)
+2. Copy (font and images folders inside app/ into dist/)
+3. Push to origin master
+4. git subtree push --prefix dist origin gh-pages
