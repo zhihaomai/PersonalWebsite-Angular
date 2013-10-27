@@ -6,7 +6,7 @@ angular.module('PersonalWebsiteAngularApp', [
   .config ($routeProvider) ->
     $routeProvider
       .when '/',
-        templateUrl: 'views/main.html'
-        controller: 'MainCtrl'
+        templateUrl: 'views/homeView.html'
+        controller: 'HomeController'
       .otherwise
         redirectTo: '/'
