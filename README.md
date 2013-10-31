@@ -1,4 +1,8 @@
 PersonalWebsite-Angular
 =======================
-
-My personal website created with AngularJS.
+This is my personal website project.
+Tools Used:
+- Yeoman (Grunt) for skeleton and development
+- Bootstrap + Flat UI for styling
+- Coffeescript Controllers
+- Angular Framework
