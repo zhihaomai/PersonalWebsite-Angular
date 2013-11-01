@@ -3925,7 +3925,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs.nav-justified > li > a {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -4006,7 +4006,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-justified > li > a {
-  margin-bottom: 5px;
   text-align: center;
 }
 

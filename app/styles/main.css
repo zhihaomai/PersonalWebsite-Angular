@@ -38,10 +38,12 @@ a.symbol:before {
   text-align: center;
   color: #1ABC9C;
 }
-.min-width {
-  min-width: 800px;
-}
+
 .home-nav {
   background: #34495E;
+}
+
+.container {
+  min-width: 320px;
 }
 /* =================== */
