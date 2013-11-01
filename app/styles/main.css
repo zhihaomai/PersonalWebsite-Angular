@@ -46,4 +46,8 @@ a.symbol:before {
 .container {
   min-width: 320px;
 }
+
+.active {
+	background: #2C3E50;
+}
 /* =================== */
