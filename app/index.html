@@ -30,7 +30,16 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <div class="container">
+        <navigation></navigation>
+        <div class="col-md-12" style="padding:0">
+            <img src="images/home-banner.JPG" alt="example-image" class="img-responsive">
+        </div>
+        <div ng-view></div>
+        <br><hr>
+        <div style="text-align:center;font-size:10px;color:gray">2013</div>
+        <br>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
