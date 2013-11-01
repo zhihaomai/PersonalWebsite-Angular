@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('PersonalWebsiteAngularApp')
-  .controller 'MainCtrl', ($scope) ->
+  .controller 'ContactViewCtrl', ($scope) ->
     $scope.awesomeThings = [
       'HTML5 Boilerplate'
       'AngularJS'
