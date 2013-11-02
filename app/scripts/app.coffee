@@ -14,5 +14,11 @@ angular.module('PersonalWebsiteAngularApp', [
       .when '/contact',
         templateUrl: 'views/contactView.html',
         controller: 'ContactViewCtrl'
+      .when '/video',
+        templateUrl: 'views/videoView.html',
+        controller: 'VideoViewCtrl'
+      .when '/photo',
+        templateUrl: 'views/photoView.html',
+        controller: 'PhotoViewCtrl'
       .otherwise
         redirectTo: '/'
