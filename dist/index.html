@@ -11,13 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/bootstrap.css">
-        <link rel="stylesheet" href="styles/bootstrap-docs.css">
-        <link rel="stylesheet" href="styles/prettify.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/flat-ui.css">
-        <!-- endbuild -->
+        <link rel="stylesheet" href="styles/3da1a1c4.main.css">
 </head>
   <body ng-app="PersonalWebsiteAngularApp">
     <!--[if lt IE 7]>
@@ -30,7 +24,16 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <div class="container">
+        <navigation></navigation>
+        <div class="col-md-12" style="padding:0">
+            <img src="images/home-banner.JPG" alt="example-image" class="img-responsive">
+        </div>
+        <div ng-view="" class="col-md-12"></div>
+        <br><hr>
+        <div style="text-align:center;font-size:10px;color:gray">2013</div>
+        <br>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -43,35 +46,13 @@
        ga('send', 'pageview');
     </script>
 
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/76c21dca.plugins.js"></script>
 
-        <!-- build:js scripts/modules.js -->
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/9e831593.modules.js"></script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers\homeViewController.js"></script>
-        <script src="scripts/controllers\contactViewController.js"></script>
-        <script src="scripts/controllers\resumeViewController.js"></script>
-        <script src="scripts/directives\navigation.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/f32db1cd.scripts.js"></script>
 </body>
 </html>
