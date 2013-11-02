@@ -1,29 +1,29 @@
-<div class="col-md-12 hover-styling" style="padding:0">
+<div ng-controller="navigationCtrl" class="col-md-12 hover-styling" style="padding:0">
 	<ul class="nav nav-justified">
-		<li class="home-nav" ng-click="setActive()">
+		<li class="home-nav" ng-class="{ active: isActive('/') }">
 			<a href="#/">
 		    	<span class="fui-cmd"></span>
 		    	<span>Home</span>
 			</a>
 		</li>
-		<li class="home-nav" ng-click="setActive()">		
+		<li class="home-nav" ng-class="{ active: isActive('/resume') }">		
 			<a href="#/resume">
 		    	<span class="fui-user"></span>
 		    	<span> Resume</span>
 			</a></li>
-		<li class="home-nav" ng-click="setActive()">
+		<li class="home-nav" ng-class="{ active: isActive('/photo') }">
 			<a href="#/photo">
 		    	<span class="fui-photo"></span>
 		    	<span> My Photos</span>
 			</a></li>
 		</li>
-		<li class="home-nav" ng-click="setActive()">
+		<li class="home-nav" ng-class="{ active: isActive('/video') }">
 			<a href="#/video">
 		    	<span class="fui-video"></span>
 		    	<span> My Videos</span>
 			</a></li>
 		</li>
-		<li class="home-nav" ng-click="setActive()">
+		<li class="home-nav" ng-class="{ active: isActive('/contact') }">
 			<a href="#/contact">
 		    	<span class="fui-mail"></span>
 		    	<span> Contact Me</span>

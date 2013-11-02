@@ -4,11 +4,7 @@ angular.module('PersonalWebsiteAngularApp')
 .directive('navigation', () ->
 	return {
 		restrict: 'E'
+		scope: {}
 		templateUrl: 'views/navigation.html'
-		link: (scope, elem, attrs, ctrl) ->
-			scope.setActive = () ->
-				console.log "navigation item clicked"
-				window.x = elem
-				$(elem).find('li').removeClass('active')
-			}
+	}
 )
