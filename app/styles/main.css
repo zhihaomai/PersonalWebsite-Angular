@@ -30,7 +30,7 @@ a.symbol:before {
 }
 /* =================== */
 
-/* Bootstrap Overwrite */
+/* Bootstrap & Flat UI Overwrite */
 .name-title {
   text-align: center;
 }

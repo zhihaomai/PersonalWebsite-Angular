@@ -1857,7 +1857,7 @@ fieldset[disabled] .form-control + .input-icon,
 }
 .tagsinput {
   background: white;
-  border: 2px solid #1abc9c;
+  border: 2px solid #34495E;
   border-radius: 6px;
   height: 100px;
   margin-bottom: 18px;
@@ -1867,7 +1867,7 @@ fieldset[disabled] .form-control + .input-icon,
 }
 .tagsinput .tag {
   border-radius: 4px;
-  background-color: #1abc9c;
+  background-color: #34495E;
   color: #ffffff;
   font-size: 14px;
   cursor: pointer;
