@@ -41,18 +41,16 @@ angular.module('PersonalWebsiteAngularApp')
 	   subtitle: 'Taken on my vacation in the Summer of 2012' 
 	   tags: {
 	     tag1: 'disney'
-	     tag2: 'girlfriend'
 	     tag3: 'summer'
 	   }
 	}
 	photo5 = { 
 	   photoUrl: 'http://ecx.images-amazon.com/images/I/51tTnnrOFBL._SY300_.jpg'
 	   title: 'Chicago'
-	   subtitle: 'Taken on my vacation in the Fall of 2013' 
+	   subtitle: 'Taken on my vacation in the October of 2013' 
 	   tags: {
 	     tag1: 'anniversary'
 	     tag2: 'girlfriend'
-	     tag3: 'dreamcity'
 	   }
 	}
 	photo6 = { 
