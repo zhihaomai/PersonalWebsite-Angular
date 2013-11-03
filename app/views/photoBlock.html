@@ -1,0 +1,10 @@
+<div class="thumbnail" style="background:#ECF0F1" ng-click="isClicked()">
+	<img class="img-rounded" ng-src="{{ photo.photoUrl }}" style="margin-top:20px" alt="...">
+	<div class="caption">
+		<h5>{{ photo.title }}</h5>
+		<p style="font-size:14px">{{ photo.subtitle }}</p>
+		<div id="tagsinput_tagsinput" class="tagsinput " style="height: 100%;">
+			<span class="tag" ng-repeat="tagTitle in photo.tags"><span>{{ tagTitle }}</span></span>
+		</div>
+	</div>
+</div>
