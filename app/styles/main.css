@@ -1,4 +1,34 @@
+/* General View Styles */
+/* ------------------- */
+
+.view-header-img {
+  display:inline-block; 
+  padding:10px; 
+  vertical-align:middle; 
+  height:80px;
+}
+
+.view-header-label {
+  display:inline-block;
+  padding:10px;
+  margin:0;
+  vertical-align:middle;
+}
+
+.disclaimer-msg {
+  text-align:center; 
+  font-size:12px;
+  color:red;
+}
+
+.footer-label {
+  text-align:center;
+  font-size:10px;
+  color:gray;
+}
+
 /* Monosocial Icons */
+/* ---------------- */
 @font-face {
     font-family: 'Mono Social Icons Font';
     src: url('MonoSocialIconsFont-1.10.eot');
@@ -28,9 +58,10 @@ a.symbol:before {
     margin-right: 0.3em;
     font-size: 130%;
 }
-/* =================== */
 
 /* Bootstrap & Flat UI Overwrite */
+/* ----------------------------- */
+
 .name-title {
   text-align: center;
 }
@@ -56,4 +87,10 @@ a.symbol:before {
   text-decoration: none;
   background-color: #2C3E50;
 }
-/* =================== */
+
+
+
+
+
+
+
