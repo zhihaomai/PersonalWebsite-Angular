@@ -2,7 +2,7 @@
 
 angular.module('PersonalWebsiteAngularApp')
 	.controller('PhotoViewCtrl', ($scope, photoService) ->
-		$scope.photos = photoService.getPhotos()
+		$scope.photos = photoService.query()
   )
 
   	.directive('photoblock', () ->
