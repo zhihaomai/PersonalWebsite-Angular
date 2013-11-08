@@ -1,4 +1,4 @@
 'use strict'
 
 angular.module('PersonalWebsiteAngularApp')
-  .controller 'VideoViewCtrl', ($scope) ->
+  .controller 'BlogViewCtrl', ($scope) ->

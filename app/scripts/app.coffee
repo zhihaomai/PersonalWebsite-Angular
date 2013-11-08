@@ -20,5 +20,8 @@ angular.module('PersonalWebsiteAngularApp', [
       .when '/photo',
         templateUrl: 'views/photoView.html',
         controller: 'PhotoViewCtrl'
+      .when '/blog',
+        templateUrl: 'views/blogView.html',
+        controller: 'BlogViewCtrl'
       .otherwise
         redirectTo: '/'
