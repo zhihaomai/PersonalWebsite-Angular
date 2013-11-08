@@ -34,6 +34,15 @@
   border: 1px solid gray;
 }
 
+.loading-text {
+  text-align: center;
+  font-size:25px;
+}
+
+.hide {
+  display: none; 
+}
+
 /* Monosocial Icons */
 /* ---------------- */
 @font-face {
