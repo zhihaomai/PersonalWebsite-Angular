@@ -2,7 +2,7 @@
 
 angular.module('PersonalWebsiteAngularApp')
 .factory 'photoService', ($resource) ->
-	$resource("http://zhihaomai.herokuapp.com/photos")
+	$resource("http://zhihaomai.herokuapp.com/photos.json")
 
 angular.module('PersonalWebsiteAngularApp')
 .config ['$httpProvider', ($httpProvider) ->
