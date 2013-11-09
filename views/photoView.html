@@ -6,7 +6,22 @@
 	</div>
 	<hr>
 </div>
-<div class="col-md-12 loading-text" ng-class="{hide: doneLoading}">Loading Photos...</div>
+<div class="col-md-12 loading-text" ng-class="{hide: doneLoading}">
+	<span>Loading Photos...</span>
+	<div class="spinner16">
+	    <ul>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+        	<li></li>
+    	</ul>            
+	</div>
+</div>
 <div class="row">
   <div class="col-sm-6 col-md-4" ng-repeat="photo in photos">
     <photoblock></photoblock>
