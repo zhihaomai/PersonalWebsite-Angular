@@ -1,0 +1,10 @@
+<div class="col-md-12" style="overflow:auto">
+	<span class="col-md-3 blog-date">{{blog.date}}</span>
+	<div class="col-md-9">
+		<img src="{{blog.image}}" class="img-rounded img-responsive" style="width:100%">
+		<br>
+		<div class="blog-title">{{blog.title}}</div>
+		<div ng-bind-html-unsafe="blog.body"></div>
+		<br>
+	</div>
+</div>

@@ -6,6 +6,23 @@
 	</div>
 	<hr>
 </div>
-<div style="text-align:center;padding-top:30px">
-	Under Constructon. Please Check Back Soon.
+<div class="col-md-12 loading-text" ng-class="{hide: doneLoading}">
+	<span>Loading Blog Posts...</span>
+	<div class="spinner16">
+	    <ul>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+        	<li></li>
+    	</ul>            
+	</div>
+</div>
+<div ng-repeat="blog in blogPosts | reverse">
+	<blogpost></blogpost>
+	<br><br>
 </div>
