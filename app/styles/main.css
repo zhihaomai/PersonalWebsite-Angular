@@ -39,11 +39,20 @@
 
 .loading-text {
   text-align: center;
-  font-size:25px;
+  font-size: 25px;
 }
 
 .hide {
   display: none; 
+}
+
+.blog-date{
+  color: #1ABC9C;
+}
+
+.blog-title{
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 /* Monosocial Icons */
