@@ -6,5 +6,16 @@
 		<div class="blog-title">{{blog.title}}</div>
 		<div ng-bind-html-unsafe="blog.body"></div>
 		<br>
+		<table class="col-md-12">
+			<tr>
+				<td style="width:50%">
+					<a class="btn btn-block btn-lg btn-success" ng-click="likeClicked(blog.id)">({{blog.likes}}) Likes</a>
+				</td>
+				<td style="width:50%">
+					<a class="btn btn-block btn-lg btn-danger" ng-click="dislikeClicked(blog.id)">({{blog.dislikes}}) Dislikes</a>
+				</td>
+			</tr>
+		</table>
+		<br>
 	</div>
 </div>
