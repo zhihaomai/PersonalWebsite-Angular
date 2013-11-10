@@ -1,10 +1,21 @@
 <div class="col-md-12" style="overflow:auto">
 	<span class="col-md-3 blog-date">{{blog.date}}</span>
 	<div class="col-md-9">
-		<img src="{{blog.image}}" class="img-rounded img-responsive" style="width:100%">
+		<img ng-src="{{blog.image}}" class="img-rounded img-responsive" style="width:100%;border:1px solid #34495E">
 		<br>
 		<div class="blog-title">{{blog.title}}</div>
 		<div ng-bind-html-unsafe="blog.body"></div>
+		<br>
+		<table class="col-md-12">
+			<tr>
+				<td style="width:50%">
+					<a class="btn btn-block btn-lg btn-success" ng-click="likeClicked(blog)">({{blog.likes}}) Likes</a>
+				</td>
+				<td style="width:50%">
+					<a class="btn btn-block btn-lg btn-danger" ng-click="dislikeClicked(blog)">({{blog.dislikes}}) Dislikes</a>
+				</td>
+			</tr>
+		</table>
 		<br>
 	</div>
 </div>
