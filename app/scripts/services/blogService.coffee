@@ -2,10 +2,21 @@
 
 angular.module('PersonalWebsiteAngularApp')
 .factory 'blogService', ($resource) ->
-	$resource("http://zhihaomai.herokuapp.com/blogs.json")
+	$resource "http://zhihaomai.herokuapp.com/blogs/:id",
+		id: "@id"
+		likes: "@likes"
+		dislikes: "@dislikes"
+	,
+		list:
+			method: "GET"
+			isArray: true
+		update:
+			method: "PUT"
+			headers: { 'Content-Type': 'application/json' }
 
 angular.module('PersonalWebsiteAngularApp')
-.config ['$httpProvider', ($httpProvider) ->
-	$httpProvider.defaults.useXDomain = true
-	delete $httpProvider.defaults.headers.common["X-Requested-With"]
+.config ['$httpProvider', (provider) ->
+	provider.defaults.useXDomain = true
+	provider.defaults.headers.common["X-CSRF-Token"] = $("meta[name=csrf-token]").attr("content")
+	delete provider.defaults.headers.common["X-Requested-With"]
 ]

@@ -2,10 +2,9 @@ angular.module('PersonalWebsiteAngularApp')
 	.controller('BlogViewCtrl', ($scope, blogService) ->
 	
 		$scope.doneLoading = false;
-		$scope.blogPosts = blogService.query ((data) ->
+		$scope.blogPosts = blogService.list ((data) ->
 			$scope.doneLoading = true;
 			for i in [0..data.length-1] by 1
-				data[i].id = i
 				data[i].body = $scope.adjustBodyText(data[i].body)
 		), (err) ->
 			alert "Could not load blog posts"
@@ -18,12 +17,19 @@ angular.module('PersonalWebsiteAngularApp')
 				newText += "<div>"+each+"<br></div>"
 			return newText
 
-		$scope.likeClicked = (id) ->
-			$scope.blogPosts[id].likes += 1
+		$scope.likeClicked = (blog) ->
+			blog.likes += 1
+			$scope.updateDB blog
+			
+		$scope.dislikeClicked = (blog) ->
+			blog.dislikes += 1
+			$scope.updateDB blog
 
-		$scope.dislikeClicked = (id) ->
-			$scope.blogPosts[id].dislikes += 1
-
+		$scope.updateDB = (blog) ->
+			blogService.update
+				id:blog.id
+				likes:blog.likes
+				dislikes:blog.dislikes
 	)
 
 	.directive('blogpost', () ->
