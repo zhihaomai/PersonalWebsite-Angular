@@ -1,6 +1,6 @@
 PersonalWebsite-Angular
 =======================
-![alt tag](https://raw.github.com/zhihaomai/PersonalWebsite-Angular/screenshot.png)
+![alt tag](https://raw.github.com/zhihaomai/PersonalWebsite-Angular/master/screenshot.png)
 
 This is my personal website project.
 Tools Used:
