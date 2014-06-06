@@ -31,11 +31,11 @@
 }
 
 .resume-img {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-  border: 1px solid gray;
+  /*max-width: 800px;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*padding: 0px;*/
+  border: 1px solid #EEE;
 }
 
 .loading-text {
@@ -49,10 +49,11 @@
 
 .blog-date{
   color: #1ABC9C;
+  font-weight: bolder;
 }
 
 .blog-title{
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 10px;
 }
 

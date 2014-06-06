@@ -2,6 +2,7 @@
 
 angular.module('PersonalWebsiteAngularApp')
 .factory 'blogService', ($resource) ->
+	# $resource "http://127.0.0.1\\:3000/blogs/:id",
 	$resource "http://zhihaomai.herokuapp.com/blogs/:id",
 		id: "@id"
 		likes: "@likes"
